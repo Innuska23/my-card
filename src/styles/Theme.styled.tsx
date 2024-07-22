@@ -2,6 +2,8 @@ export const myTheme = {
     colors: {
         primary: '#F5F5F5',
         secondary: '#fff',
+        title: '#000',
+        text: '#abb3ba',
     },
     buttons: {
         primary: '#fff',

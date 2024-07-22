@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { myTheme } from '../../styles/Theme.styled';
 
 export const WrapperCard = styled.div`
@@ -6,6 +6,8 @@ export const WrapperCard = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
 `
 
 export const BoxCard = styled.div`
@@ -20,12 +22,12 @@ export const BoxCard = styled.div`
 export const HeaderBox = styled.h1`
     font-weight: 700;
     font-size: 16px;
-    color: #000;
+    color: ${myTheme.colors.title};
     margin-top: 20px;
 `
 
 export const ImageBox = styled.img`
-    background-image: url('../../images/img.jpg');
+    background-image: url('../../assets/images/img.jpg');
     border-radius: 10px;
     width: 280px;
     height: 170px;
@@ -35,7 +37,7 @@ export const ParagraphBox = styled.p`
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;
-    color: #abb3ba;
+    color: ${myTheme.colors.text};
     margin-top: 20px;
 `
 
